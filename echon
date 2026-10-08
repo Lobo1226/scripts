@@ -1,0 +1,8 @@
+#!/bin/sh
+# echon -- Echo without the trailing newline.
+# Portable version (the book also shows awk and printf variants).
+
+echon()
+{
+  echo "$*" | tr -d '\n'
+}
